@@ -8,7 +8,7 @@ class Image(db.Model):
     listingId = db.Column(db.Integer, db.ForeignKey('recipes.id'), nullable=False)
     imageURL = db.Column(db.String, nullable=False)
 
-    listing = db.relationship('Listings', back_populates='medias')
+    listing = db.relationship('Listings', back_populates='images')
 
     def to_dict(self):
         return {
