@@ -5,7 +5,7 @@ class Amenity(db.Model):
     __tablename__ = 'amenities'
 
     id = db.Column(db.Integer, primary_key=True)
-    listingId = db.Column(db.Integer, db.ForeignKey('recipes.id'), nullable=False)
+    listingId = db.Column(db.Integer, db.ForeignKey('listings.id'), nullable=False)
     iconURL = db.Column(db.String, nullable=False)
     listing = db.relationship('Listings', back_populates='amenities')
 

@@ -5,7 +5,7 @@ class Image(db.Model):
     __tablename__ = 'images'
 
     id = db.Column(db.Integer, primary_key=True)
-    listingId = db.Column(db.Integer, db.ForeignKey('recipes.id'), nullable=False)
+    listingId = db.Column(db.Integer, db.ForeignKey('listings.id'), nullable=False)
     imageURL = db.Column(db.String, nullable=False)
 
     listing = db.relationship('Listings', back_populates='images')

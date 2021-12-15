@@ -1,4 +1,3 @@
-from ViaBnB.app.models import amenities
 from .db import db
 from sqlalchemy import DateTime
 from sqlalchemy.sql.functions import now
