@@ -7,11 +7,11 @@ class Amenity(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     listingId = db.Column(db.Integer, db.ForeignKey('listings.id'), nullable=False)
     iconURL = db.Column(db.String, nullable=False)
-    listing = db.relationship('Listings', back_populates='amenities')
+    listing = db.relationship('Listing', back_populates='amenities', cascade="all, delete")
 
     def to_dict(self):
         return {
             'id': self.id,
-            'imageURL': self.imageURL,
+            'iconURL': self.iconURL,
             'listingId': self.listingId
         }

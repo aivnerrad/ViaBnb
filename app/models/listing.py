@@ -16,8 +16,9 @@ class Listing(db.Model):
     monthly_price = db.Column(db.Integer, nullable=False)
     created_at = db.Column(DateTime(timezone=True), server_default=now())
     updated_at = db.Column(DateTime(timezone=True), onupdate=now())
-    reviews = db.relationship('Review', back_populates='listings', cascade="all, delete")
-    amenities = db.relationship('Amenity', back_populates='listings', cascade="all, delete")
+    images = db.relationship('Image', back_populates='listing', cascade="all, delete")
+    reviews = db.relationship('Review', back_populates='listing', cascade="all, delete")
+    amenities = db.relationship('Amenity', back_populates='listing', cascade="all, delete")
 
     def to_dict(self):
         return {

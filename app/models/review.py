@@ -13,7 +13,7 @@ class Review(db.Model):
     created_at = db.Column(DateTime(timezone=True), server_default=now())
     updated_at = db.Column(DateTime(timezone=True), onupdate=now())
 
-    user = db.relationship('User', back_populates='reviews', cascade="all, delete")
+    users = db.relationship('User', back_populates='reviews', cascade="all, delete")
     listing = db.relationship('Listing', back_populates='reviews', cascade="all, delete")
 
     def to_dict(self):
