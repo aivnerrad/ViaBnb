@@ -1,17 +1,17 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import LogoutButton from '../auth/LogoutButton'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './NavBar.css'
 const NavBar = () => {
-  return (
-    <nav>
-      <ul>
-        <li>
-          <NavLink to='/' exact={true} activeClassName='active'>
-            Home
-          </NavLink>
-        </li>
+  const user = useSelector(state => state.session.user)
+
+  const dropdownMenu = (
+    <ul>
+      {!user && (
+      <>
         <li>
           <NavLink to='/login' exact={true} activeClassName='active'>
             Login
@@ -22,15 +22,24 @@ const NavBar = () => {
             Sign Up
           </NavLink>
         </li>
-        <li>
-          <NavLink to='/users' exact={true} activeClassName='active'>
-            Users
-          </NavLink>
-        </li>
-        <li>
-          <LogoutButton />
-        </li>
-      </ul>
+      </>
+      )}
+      {user && (
+      <li>
+        <LogoutButton />
+      </li>
+      )}
+    </ul>
+
+  )
+  return (
+    <nav>
+      <NavLink id="home-button" to='/' exact={true} activeClassName='active'>
+        ViaBnb
+      </NavLink>
+      <div id="profile-button">
+        <FontAwesomeIcon icon="fa-thin fa-bars" />
+      </div>
     </nav>
   );
 }

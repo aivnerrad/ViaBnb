@@ -1,0 +1,61 @@
+#home-button {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  border-bottom: .5px solid #dedede;
+  z-index: 1;
+}
+
+#home-button:hover {
+  transition-property: opacity;
+  transition-duration: .3s;
+  opacity: 0.7
+}
+
+#icon-div {
+  height: 30px;
+  width: 30px;
+}
+
+#icon {
+  height: 28px;
+  width: 28px;
+  color: rgb(185, 43, 39)
+}
+
+
+#profile-button {
+  background-color: grey;
+  border-radius: 25px;
+  height: 30px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+}
+
+#nav-login-button {
+background-color: #B92B27;
+color: white;
+width: 60px;
+border-radius: 15px;
+border: none;
+height: 20px;
+padding: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
