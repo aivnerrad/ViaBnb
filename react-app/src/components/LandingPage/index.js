@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <div>
       <h1>Landing Page</h1>
-      <NavLink to="/listing-page">Listing Page</NavLink>
+      <NavLink to="/listings">Listings Page</NavLink>
     </div>
   );
 }
