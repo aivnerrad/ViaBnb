@@ -1,3 +1,45 @@
 #landing-page{
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#landing-image {
+  height: 500px;
+  width: 88%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+#landing-image-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 34px;
+  position: relative;
+  top: 75%;
+  left: 25%;
+  color: black;
+  font-weight: 600;
+}
+
+#landing-image-button {
+  position: relative;
+  top: 80%;
+  left: 45%;
+  width: 145px;
+  height: 55px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#landing-image-button-text {
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  color: linear-gradient(
+90deg, #6F019C 0%, #C6017E 135.12%);
 }
