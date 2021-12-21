@@ -5,8 +5,35 @@
   align-items: center;
 }
 
+#search-bar-background {
+  background-color: white;
+  height: 60px;
+  width: 65%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.search-bar-label {
+  color: black;
+  font-size: 14px;
+}
+
+.hover-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#search-bar-inputs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #landing-image {
-  height: 500px;
+  height: 700px;
   width: 88%;
   background-position: center;
   background-size: cover;
@@ -17,7 +44,7 @@
   font-family: 'Nunito Sans', sans-serif;
   font-size: 34px;
   position: relative;
-  top: 75%;
+  top: 70%;
   left: 25%;
   color: black;
   font-weight: 600;
@@ -25,7 +52,7 @@
 
 #landing-image-button {
   position: relative;
-  top: 80%;
+  top: 70%;
   left: 45%;
   width: 145px;
   height: 55px;
