@@ -14,6 +14,7 @@ class Listing(db.Model):
     address = db.Column(db.String(255), nullable=False)
     description = db.Column(db.Text, nullable=False)
     monthly_price = db.Column(db.Integer, nullable=False)
+    date_available = db.Column(db.Integer, nullable=False, server_default=now())
     created_at = db.Column(DateTime(timezone=True), server_default=now())
     updated_at = db.Column(DateTime(timezone=True), onupdate=now())
     images = db.relationship('Image', back_populates='listing', cascade="all, delete")
