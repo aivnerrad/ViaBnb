@@ -27,7 +27,7 @@ const LandingPage = () => {
                 <label className='search-bar-label'>Bathrooms</label>
                 <input type="text" placeholder='Bathrooms'></input>
               </div>
-              <div id="home-search-button"><FontAwesomeIcon icon={faSearch}/><span>Search</span></div>
+              <div id="home-search-button"><FontAwesomeIcon icon={faSearch}/></div>
             </div>
           </div>
           <div id="landing-image" style={{"background-image" : "url(/images/home.jpg)"}}>
