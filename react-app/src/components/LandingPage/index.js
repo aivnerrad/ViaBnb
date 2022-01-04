@@ -41,8 +41,8 @@ const LandingPage = () => {
         <div id="refer-a-friend-card">
           <div id="refer-text">
             <span id="introducing">Introducing</span>
-            <h3 id="big-refer-text">Viabnb Refer-a-friend Bonus</h3>
-            <button>Look now!</button>
+            <h3 id="big-refer-text">Viabnb Referral Bonus</h3>
+            <div id="refer-button">Look now!</div>
           </div>
           <div id="refer-icon">
             <FontAwesomeIcon id="people-carry-icon" icon={faPeopleCarry}/>
@@ -50,6 +50,10 @@ const LandingPage = () => {
           </div>
         </div>
       <div className='white'>
+        <div className='city-card'></div>
+        <div className='city-card'></div>
+        <div className='city-card'></div>
+        <div className='city-card'></div>
       </div>
     </>
   );
