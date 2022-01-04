@@ -8,6 +8,7 @@ const LandingPage = () => {
   return (
     <>
       <div className='black'>
+      </div>
         <div id="landing-page">
           <div id="search-bar-background">
             <div id="search-bar-inputs-container">
@@ -37,7 +38,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </div>
+        <div id="refer-a-friend-card"><span>Introducing</span><h3>Viabnb Refer-a-friend Bonus</h3><button>Look now!</button></div>
       <div className='white'>
       </div>
     </>
