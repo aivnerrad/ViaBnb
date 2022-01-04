@@ -50,10 +50,24 @@ const LandingPage = () => {
           </div>
         </div>
       <div className='white'>
-        <div className='city-card'></div>
-        <div className='city-card'></div>
-        <div className='city-card'></div>
-        <div className='city-card'></div>
+        <div id="city-card-container">
+          <div className='city-card'>
+            <div className='city-card-image' style={{"background-image" : "url(/images/luxury-utah-apartment.png)"}}></div>
+            <div className='city-info' style={{"background-color" : "#DE3151"}}><h2>Denver</h2><span>999 miles away</span></div>
+          </div>
+          <div className='city-card' >
+            <div className='city-card-image' style={{"background-image" : "url(/images/modern-brass-apartment.png)"}} ></div>
+            <div className='city-info' style={{"background-color" : "#BC1A6E"}}><h2>Washington D.C.</h2><span>999 miles away</span></div>
+          </div>
+          <div className='city-card' >
+            <div className='city-card-image' style={{"background-image" : "url(/images/old-but-new-apartment.png)"}} ></div>
+            <div className='city-info' style={{"background-color" : "#CC2D4A"}}><h2>New York City</h2><span>999 miles away</span></div>
+          </div>
+          <div className='city-card' >
+            <div className='city-card-image' style={{"background-image" : "url(/images/open-floor-apartment.png)"}} ></div>
+            <div className='city-info' style={{"background-color" : "#D93B30"}}><h2>Los Angeles</h2><span>999 miles away</span></div>
+          </div>
+        </div>
       </div>
     </>
   );
