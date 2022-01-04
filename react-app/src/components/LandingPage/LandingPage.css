@@ -86,9 +86,51 @@
 }
 
 #refer-a-friend-card{
-  height: 500px;
-  width: 500px;
+  position: relative;
+  top: 20%;
+  left: 6.5%;
+  height: 512px;
+  width: 87%;
   background-color: #EBEBEB;
-  border-radius: 10%;
+  border-radius: 15px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#refer-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+#introducing{
+  font-size: 34px;
+}
+#big-refer-text{
+  display: flex;
+  flex-direction: column;
+  font-size: 70px;
+}
+#people-carry-icon{
+  font-size: 300px;
+}
+
+#refer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#shadow-div{
+  background: #FEFEFE;
+  height: 10px;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0px 0px 100px black;
+  transform: rotateX(87deg) translateZ(-5px);
 
 }

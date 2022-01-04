@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import "./LandingPage.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faSearch } from "@fortawesome/free-solid-svg-icons"
+import { faPeopleCarry, faSearch } from "@fortawesome/free-solid-svg-icons"
 
 const LandingPage = () => {
   return (
@@ -38,7 +38,17 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div id="refer-a-friend-card"><span>Introducing</span><h3>Viabnb Refer-a-friend Bonus</h3><button>Look now!</button></div>
+        <div id="refer-a-friend-card">
+          <div id="refer-text">
+            <span id="introducing">Introducing</span>
+            <h3 id="big-refer-text">Viabnb Refer-a-friend Bonus</h3>
+            <button>Look now!</button>
+          </div>
+          <div id="refer-icon">
+            <FontAwesomeIcon id="people-carry-icon" icon={faPeopleCarry}/>
+            <div id="shadow-div"></div>
+          </div>
+        </div>
       <div className='white'>
       </div>
     </>

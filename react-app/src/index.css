@@ -24,11 +24,15 @@ a{
   right: 0;
   height: 1100px;
   background-color: black;
-  z-index: 0;
 }
 
 .white {
-  width: 100%;
+  position: absolute;
+  top: 1175px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 1100px;
   background-color: white;
+  z-index: 0;
 }
