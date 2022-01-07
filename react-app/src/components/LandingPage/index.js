@@ -50,6 +50,7 @@ const LandingPage = () => {
           </div>
         </div>
       <div className='white'>
+        <h2 id="city-header">Check out these listings!</h2>
         <div id="city-card-container">
           <div className='city-card'>
             <div className='city-card-image' style={{"background-image" : "url(/images/luxury-utah-apartment.png)"}}></div>
@@ -67,6 +68,10 @@ const LandingPage = () => {
             <div className='city-card-image' style={{"background-image" : "url(/images/open-floor-apartment.png)"}} ></div>
             <div className='city-info' style={{"background-color" : "#D93B30"}}><h2>Los Angeles</h2><span>999 miles away</span></div>
           </div>
+        </div>
+        <div id="host-card" style={{"background-image": "url(/images/professional-person.jpg)"}}>
+          <span id="host-card-text">Questions about a listing?</span>
+          <button>Ask our partners!</button>
         </div>
       </div>
     </>
