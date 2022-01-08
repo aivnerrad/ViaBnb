@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 import "./LandingPage.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPeopleCarry, faSearch } from "@fortawesome/free-solid-svg-icons"
+import Footer from '../Footer';
 
 const LandingPage = () => {
   return (
     <>
       <div className='black'>
-      </div>
         <div id="landing-page">
           <div id="search-bar-background">
             <div id="search-bar-inputs-container">
@@ -38,6 +38,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+      </div>
         <div id="refer-a-friend-card">
           <div id="refer-text">
             <span id="introducing">Introducing</span>
@@ -50,7 +51,7 @@ const LandingPage = () => {
           </div>
         </div>
       <div className='white'>
-        <h2 id="city-header">Check out these listings!</h2>
+        <span id="city-header">Check out these listings!</span>
         <div id="city-card-container">
           <div className='city-card'>
             <div className='city-card-image' style={{"background-image" : "url(/images/luxury-utah-apartment.png)"}}></div>
@@ -71,9 +72,27 @@ const LandingPage = () => {
         </div>
         <div id="host-card" style={{"background-image": "url(/images/professional-person.jpg)"}}>
           <span id="host-card-text">Questions about a listing?</span>
-          <button>Ask our partners!</button>
+          <button id="partner-button">Ask our partners!</button>
+        </div>
+        <div id="rental-suggestions">
+          <h3 id="suggestions-title">Suggestions for future homes</h3>
+          <div id="suggestions-categories">
+            <span className='suggestion'>Apartments</span>
+            <span className='suggestion'>Houses</span>
+            <span className='suggestion'>Townhouses</span>
+            <span className='suggestion'>Random Homes</span>
+          </div>
+          <div id="suggestions-cities">
+            <span className='suggested-city'>Seattle, Washington</span>
+            <span className='suggested-city'>Las Vegas, Nevada</span>
+            <span className='suggested-city'>Charlotte, North Carolina</span>
+            <span className='suggested-city'>Tampa, Florida</span>
+            <span className='suggested-city'>Boston, Massachusetts</span>
+            <span className='suggested-city'>Denver, Colorado</span>
+          </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

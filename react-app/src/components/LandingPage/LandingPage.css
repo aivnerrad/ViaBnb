@@ -1,9 +1,8 @@
 #landing-page{
-  position: relative;
   color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 #search-bar-background {
@@ -68,6 +67,7 @@
   position: relative;
   top: 70%;
   left: 45%;
+  right: 0px;
   width: 145px;
   height: 55px;
   border-radius: 25px;
@@ -87,7 +87,7 @@
 
 #refer-a-friend-card{
   position: relative;
-  top: 20%;
+  top: 95%;
   left: 6.5%;
   height: 512px;
   width: 87%;
@@ -158,16 +158,13 @@
 }
 
 #city-header{
-  position: relative;
-  top: 325px;
-  left: 100px;
-  font-size: 34px;
+  width: 400px;
+  font-size: 32px;
+  align-self: flex-start;
+  margin-left: 30px;
 }
 
 #city-card-container{
-  position: relative;
-  top: 300px;
-  left: 60px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -180,7 +177,8 @@
   height: 60%;
   width: 20%;
   min-width: 250px;
-  margin: 10px;
+  min-height: 320px;
+  margin: 7px;
 }
 
 .city-card:hover{
@@ -211,6 +209,71 @@
   background-size: cover;
   height: 630px;
   width: 100%;
-  position: relative;
-  top: 300px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 75px;
+
+}
+
+#host-card-text{
+  font-size: 34px;
+  color: white;
+  margin: 20px;
+}
+
+#partner-button {
+  height: 50px;
+  width: 170px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+#rental-suggestions{
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#suggestions-title{
+  align-self: flex-start;
+  margin-left: 30px;
+
+}
+#suggestions-categories{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2px solid #dedede;
+  width: 87%;
+}
+
+.suggestion {
+  margin: 10px;
+}
+
+.suggestion:hover{
+  cursor: pointer;
+}
+
+#suggestions-cities{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+.suggested-city{
+  margin: 10px 70px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
 }
