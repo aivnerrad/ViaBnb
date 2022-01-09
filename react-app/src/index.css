@@ -18,24 +18,15 @@ a{
   text-decoration: none;
 }
 .black {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 50%;
+  height: 55%;
   background-color: black;
   display: flex;
   flex-direction: column;
 }
 
 .white {
-  position: absolute;
-  top: 1175px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 1500px;
   background-color: white;
-  padding-top: 350px;
+  padding-top: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

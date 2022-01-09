@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import "./LandingPage.css"
+import "./1000+LandingPage.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPeopleCarry, faSearch } from "@fortawesome/free-solid-svg-icons"
 import Footer from '../Footer';
@@ -11,22 +11,22 @@ const LandingPage = () => {
       <div className='black'>
         <div id="landing-page">
           <div id="search-bar-background">
-            <div id="search-bar-inputs-container">
-              <div className='hover-div'>
+            <div id="inputs-container">
+              <div className='search-bar-input-container'>
                 <label className='search-bar-label'>Location</label>
-                  <input type="text" placeholder='Where are you going?'></input>
+                  <input className='search-input' type="text" placeholder='Where are you going?'></input>
               </div>
-              <div className='hover-div'>
+              <div className='search-bar-input-container'>
                 <label className='search-bar-label'>Move in</label>
-                <input type="text" placeholder='Add dates'></input>
+                <input className='search-input' type="text" placeholder='Add dates'></input>
               </div>
-              <div className='hover-div'>
+              <div className='search-bar-input-container'>
                 <label className='search-bar-label'>Bedrooms</label>
-                  <input type="text" placeholder='Bedrooms'></input>
+                  <input className='search-input' type="text" placeholder='Bedrooms'></input>
               </div>
-              <div className='hover-div'>
+              <div className='search-bar-input-container'>
                 <label className='search-bar-label'>Bathrooms</label>
-                <input type="text" placeholder='Bathrooms'></input>
+                <input className='search-input' type="text" placeholder='Bathrooms'></input>
               </div>
               <div id="home-search-button"><FontAwesomeIcon icon={faSearch}/></div>
             </div>
