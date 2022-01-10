@@ -1,0 +1,41 @@
+@media screen and (min-width:1000px) {
+  #listings-page{
+    background-color: white;
+    border-top: 1px solid grey;
+  }
+  #filters-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #housing-types-container {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 30px;
+  }
+  .housing-type{
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  #housing-filters-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+  }
+  .housing-filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 90px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+}
