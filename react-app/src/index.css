@@ -18,7 +18,7 @@ a{
   text-decoration: none;
 }
 .black {
-  height: 55%;
+  height: 550px;
   background-color: black;
   display: flex;
   flex-direction: column;
