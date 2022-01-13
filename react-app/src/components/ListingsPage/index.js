@@ -18,16 +18,16 @@ const ListingsPage = () => {
         </div>
       </div>
       <div id="properties-container">
-        <div className='property'></div>
-        <div className='property'></div>
-        <div className='property'></div>
-        <div className='property'></div>
-        <div className='property'></div>
-        <div className='property'></div>
-        <div className='property'></div>
-        <div className='property'></div>
-        <div className='property'></div>
-        <div className='property'></div>
+        <div className='property' style={{"backgroundImage": "url(/images/lakehouse.jpg)"}}></div>
+        <div className='property' style={{"backgroundImage": "url(/images/beachhouse.jpg)"}}></div>
+        <div className='property' style={{"backgroundImage": "url(/images/blue-apartment.jpg)"}}></div>
+        <div className='property' style={{"backgroundImage": "url(/images/blue-house.jpg)"}}></div>
+        <div className='property' style={{"backgroundImage": "url(/images/farm-house.jpg)"}}></div>
+        <div className='property' style={{"backgroundImage": "url(/images/florida-apartment.jpg)"}}></div>
+        <div className='property' style={{"backgroundImage": "url(/images/geometry-house.jpg)"}}></div>
+        <div className='property' style={{"backgroundImage": "url(/images/modern-apartment.jpg)"}}></div>
+        <div className='property' style={{"backgroundImage": "url(/images/field-house.jpg)"}}></div>
+        <div className='property' style={{"backgroundImage": "url(/images/palm-tree-house.jpg)"}}></div>
       </div>
     </div>
   );

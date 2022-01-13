@@ -59,5 +59,7 @@
     border: .5px solid grey;
     border-radius: 25px;
     margin: 10px 5px;
+    background-position: center;
+    background-size: contain;
   }
 }
