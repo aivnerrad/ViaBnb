@@ -38,7 +38,12 @@ const Listing = () => {
           <div id="property-description"></div>
           <div id="amenities"></div>
         </div>
-        <div id="price-box"></div>
+        <div id="price-box">
+          <div id="monthly-rent"></div>
+          <div id="property-deposit"></div>
+          <div id="pet-fees"></div>
+          <div id="average-utility-cost"></div>
+        </div>
         <div id="reviews-section">
           <div id="property-rating-and-review-count"></div>
           <div id="property-rating-chart">
