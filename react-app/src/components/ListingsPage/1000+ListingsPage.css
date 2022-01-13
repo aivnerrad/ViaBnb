@@ -72,18 +72,16 @@
     background-size: contain;
   }
   .property-details{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-  }
-  .property-city {
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .property-price{
     font-size: 14px;
     font-weight: 400;
+  }
+  .property-city {
+    font-size: 18px;
+    font-weight: 600;
   }
 }

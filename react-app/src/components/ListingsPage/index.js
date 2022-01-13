@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Footer from "../Footer"
 import "./1000+ListingsPage.css"
 const ListingsPage = () => {
   return (
@@ -18,7 +19,8 @@ const ListingsPage = () => {
         </div>
       </div>
       <div id="properties-container">
-        <div className='property-image-and-details-container'>
+        <NavLink to={"/listings/1"}>
+         <div className='property-image-and-details-container'>
           <div className='property-image' style={{"backgroundImage": "url(/images/lakehouse.jpg)"}}></div>
           <div className='property-details'>
             <div className='property-city'>City, State</div>
@@ -26,7 +28,8 @@ const ListingsPage = () => {
             <div className='property-distance'>999 Miles Away</div>
             <div className='property-available-date'>Mar '22</div>
           </div>
-        </div>
+          </div>
+        </NavLink>
         <div className='property-image-and-details-container'>
           <div className='property-image' style={{"backgroundImage": "url(/images/beachhouse.jpg)"}}></div>
           <div className='property-details'>
@@ -109,6 +112,7 @@ const ListingsPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
