@@ -48,6 +48,12 @@
     align-items: center;
     flex-wrap: wrap;
   }
+  .property-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 275px;
+  }
   .property-image-and-details-container{
     display: flex;
     flex-direction: column;

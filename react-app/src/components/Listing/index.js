@@ -1,27 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Footer from '../Footer';
+import "./1000+ListingPage.css"
 
 const Listing = () => {
   return (
-    <div>
-      <h1>Listing Page</h1>
-      <NavLink to="/listings">All Listings</NavLink>
-      <NavLink to="/">Landing Page</NavLink>
+    <div id="listing-page">
       <div id="property-information">
-        <div id="property-title"></div>
-        <div id="rating-icon"></div>
-        <div id="rating-number"></div>
-        <div id="link-to-reviews"></div>
-        <div id="property-location"></div>
+        <div id="property-title"><h3>Example Property Title</h3></div>
+        <div id="property-location"><h3>City, State</h3></div>
       </div>
       <div id="images-container">
         <div id="main-image"></div>
         <div id="remaining-images">
-          <div id="property-image"></div>
-          <div id="property-image"></div>
-          <div id="property-image"></div>
-          <div id="property-image"></div>
+          <div className="listing-property-image"></div>
+          <div id="top-right-image" className="listing-property-image"></div>
+          <div className="listing-property-image"></div>
+          <div id="bottom-right-image" className="listing-property-image"></div>
         </div>
       </div>
       <div id="property-details">
@@ -79,8 +74,10 @@ const Listing = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
+      <NavLink to="/listings">All Listings</NavLink>
+      <NavLink to="/">Landing Page</NavLink>
+      <Footer />
     </div>
   );
 }

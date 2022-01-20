@@ -1,0 +1,44 @@
+@media screen and (min-width: 1000px) {
+  #listing-page{
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #images-container{
+    display: flex;
+    width: 90%;
+    height: 475px;
+  }
+  #main-image{
+    border: 1px solid black;
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
+    width: 49%;
+  }
+  #remaining-images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 49%;
+  }
+  .listing-property-image{
+    border: 1px solid black;
+    height: 48%;
+    width: 48%;
+    margin: 2px;
+  }
+  #top-right-image{
+    border-radius: 0px 10px 0px 0px;
+  }
+  #bottom-right-image{
+    border-radius: 0px 0px 10px 0px;
+  }
+}
