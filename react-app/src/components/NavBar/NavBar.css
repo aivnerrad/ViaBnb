@@ -16,6 +16,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1;
+  box-shadow: 0px 1px 10px #DDDDDD;
 }
 
 #profile-button {
