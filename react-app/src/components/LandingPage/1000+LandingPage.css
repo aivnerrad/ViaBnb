@@ -1,0 +1,296 @@
+@media screen and (min-width:1000px) {
+
+  #landing-page{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #search-bar-background {
+    color: black;
+    background-color: white;
+    height: 64px;
+    width: 82%;
+    max-width: 900px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+  }
+
+  .search-bar-label {
+    color: black;
+    font-size: 14px;
+  }
+
+  .search-bar-input-container {
+    display: flex;
+    height: 64px;
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: .5px solid grey;
+  }
+
+  .search-input {
+    border: none;
+    outline: none;
+  }
+
+  #home-search-button {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #FF385C;
+    margin-right: 0px;
+  }
+
+  #inputs-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #landing-image {
+    height: 560px;
+    width: 87%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+  }
+
+  #landing-image-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 34px;
+    position: relative;
+    top: 70%;
+    left: 25%;
+    color: black;
+    font-weight: 600;
+  }
+
+  #landing-image-button {
+    position: relative;
+    top: 70%;
+    left: 45%;
+    right: 0px;
+    width: 145px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #landing-image-button-text {
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    color: linear-gradient(
+  90deg, #6F019C 0%, #C6017E 135.12%);
+  }
+
+  #refer-a-friend-card{
+    position: relative;
+    left: 6.5%;
+    top: 250px;
+    height: 512px;
+    width: 87%;
+    background-color: #EBEBEB;
+    border-radius: 15px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #refer-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+  }
+
+  #introducing{
+    font-weight: 600;
+    font-size: 24px;
+    position: relative;
+    top: 75px;
+  }
+
+  #big-refer-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 75px;
+  }
+
+  #people-carry-icon{
+    font-size: 300px;
+  }
+
+  #refer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #shadow-div{
+    background: #FEFEFE;
+    height: 10px;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0px 0px 100px black;
+    transform: rotateX(87deg) translateZ(-5px);
+
+  }
+
+  #refer-button{
+    position: relative;
+    bottom: 20px;
+    width: 125px;
+    height: 50px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #city-header{
+    width: 400px;
+    font-size: 32px;
+    align-self: flex-start;
+    margin: 0px 0px 40px 40px;
+  }
+
+  #city-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .city-card {
+    height: 60%;
+    width: 20%;
+    min-width: 250px;
+    min-height: 320px;
+    max-height: 350px;
+    margin: 7px;
+  }
+
+  .city-card:hover{
+    cursor: pointer;
+  }
+
+  .city-card-image{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .city-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    color: white;
+    height: 120px;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  #host-card{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 630px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 75px;
+
+  }
+
+  #host-card-text{
+    font-size: 34px;
+    color: white;
+    margin: 20px;
+  }
+
+  #partner-button {
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px;
+  }
+
+  #rental-suggestions{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #suggestions-title{
+    align-self: flex-start;
+    margin-left: 30px;
+
+  }
+  #suggestions-categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #dedede;
+    width: 87%;
+  }
+
+  .suggestion {
+    margin: 10px;
+  }
+
+  .suggestion:hover{
+    cursor: pointer;
+  }
+
+  #suggestions-cities{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 75%;
+  }
+
+  .suggested-city{
+    margin: 10px 70px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .suggested-city:hover{
+    cursor: pointer;
+  }
+}

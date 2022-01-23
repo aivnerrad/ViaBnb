@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import LogoutButton from '../auth/LogoutButton'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,6 +8,13 @@ import './NavBar.css'
 import { faBars, faUser } from '@fortawesome/free-solid-svg-icons'
 const NavBar = () => {
   const user = useSelector(state => state.session.user)
+  const location = useLocation();
+  const style = {"backgroundColor": "black"
+  , "color": "white"}
+  if(location.pathname.length > 1){
+    style.backgroundColor = "white";
+    style.color = "black";
+  }
 
   const dropdownMenu = (
     <ul>
@@ -34,7 +41,7 @@ const NavBar = () => {
 
   )
   return (
-    <nav>
+    <nav style={style}>
       <NavLink id="home-button" to='/' exact={true} activeClassName='active'>
         <img src="/favicon.ico" alt=''/>
         ViaBnb

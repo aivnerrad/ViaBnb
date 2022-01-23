@@ -1,0 +1,93 @@
+@media screen and (min-width:1000px) {
+  #listings-page{
+    background-color: white;
+    border-top: 1px solid grey;
+  }
+  #filters-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #housing-types-container {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 30px;
+  }
+  .housing-type{
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  #housing-filters-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+  }
+  .housing-filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 90px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  #properties-container {
+    position: relative;
+    left: 11%;
+    height: 100%;
+    width: 85%;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .property-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 275px;
+  }
+  .property-image-and-details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    min-width: 250px;
+    width: 22%;
+    margin: 0px 1%;
+  }
+  .property-image{
+    min-height: 250px;
+    min-width: 250px;
+    max-height: 325px;
+    max-width: 325px;
+    height: 15%;
+    width: 15%;
+    border: .5px solid grey;
+    border-radius: 25px;
+    margin: 10px 0px;
+    background-position: center;
+    background-size: contain;
+  }
+  .property-details{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .property-city {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
